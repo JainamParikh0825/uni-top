@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+:root{
+    --primary-text-color: #000;
+    --hero-section-background-color: #F9EAD7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Serif Display', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.header{
+    border-bottom: 2px solid var(--primary-text-color);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav .nav-logo a{
+    font-size: 2rem;
+    color: var(--primary-text-color);
+}
+
+.nav .nav-logo a:hover{
+    border-bottom: 2px solid var(--primary-text-color);
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 32%;
+    list-style: none;
+}
+
+.nav-items li{
+    margin-right: 25px;
+}
+
+.nav-items li:last-of-type{
+    margin-right: 0;
+}
+
+.nav-items li a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.nav-items li a:hover{
+    border-bottom: 2px solid var(--primary-text-color);
+}
+
+.section-hero{
+    background-color: var(--hero-section-background-color);
+    min-height: 100vh;
+}
